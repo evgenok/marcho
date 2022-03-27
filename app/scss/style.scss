@@ -1,32 +1,60 @@
-@import 'fonts.scss';
-@import 'global.scss';
-@import 'vars.scss';
+@import "fonts.scss";
+@import "global.scss";
+@import "vars.scss";
 
+.header {
+   padding: 40px 0;
+}
+.header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.menu__list {
+   display: flex;
+}
+.menu__list-item + .menu__list-item {
+   padding-left: 35px;
+}
+.menu__list-link {
+   font-size: 16px;
+   color: $title;
+   font-weight: 400;
+   line-height: 1.2;
+   text-transform: uppercase;
+   transition: all 0.3s ease;
+}
+.menu__list-link:hover {
+   color: $red;
+   border-bottom: 1px solid #fe3e57;
+}
+.menu__list-link--active {
+   color: $red;
+   border-bottom: 1px solid $red;
+   font-weight: bold;
+}
+.user__nav {
+   display: flex;
+}
+.user__nav-link {
+   position: relative;
+}
+.user__nav-link + .user__nav-link {
+   padding-left: 25px;
+}
+.user__nav-num {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: $red;
+   top: -10px;
+   right: -14px;
+   text-align: center;
+   color: #fff; 
+   font-family: "Quicksand", sans-serif;
+   font-weight: 500;
+   font-size: 12px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-@import 'media.scss';
+@import "media.scss";
