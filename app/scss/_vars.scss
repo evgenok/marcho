@@ -2,3 +2,11 @@ $red: #fe3e57;
 $title: #29282d; 
 $text2: #8d8d8d;
 $bg: #f6f6f6;
+
+%btn{
+   padding: 13px 26px;
+   text-transform: uppercase;
+   color: #fff;
+   background-color: $red;
+   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
