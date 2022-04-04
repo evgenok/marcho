@@ -5,4 +5,4 @@ $(function () {
       arrows: false,
       autoplaySpeed: 2000
    });
-})
+})  
