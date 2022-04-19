@@ -1,4 +1,22 @@
 $(function () {
+
+   $(".filter__price-input").ionRangeSlider({
+      type: "double",
+      min: 0,
+      max: 999,
+      from: 200,
+      to: 800,
+      grid: false, 
+      onStart: function(data){
+         $('.filter__price-from').text(data.from);
+         $('.filter__price-to').text(data.to);
+      },
+      onChange: function (data) {
+         $('.filter__price-from').text(data.from);
+         $('.filter__price-to').text(data.to);
+      },
+   });
+
    $('.top__slider-inner').slick({
       autoplay: true,
       dots: true,
