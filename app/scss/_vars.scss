@@ -12,3 +12,10 @@ $border: #ececec;
    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
    cursor: pointer;
 }
+%checkbox-hidden{
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   position: absolute;
+}

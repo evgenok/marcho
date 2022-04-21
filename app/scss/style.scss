@@ -842,7 +842,7 @@ ul.footer__top-social__list {
 }
 .filter__item {
    border: 1px solid $border;
-   padding: 35px 30px 40px;
+   padding: 30px;
    margin-bottom: 30px;
 }
 .filter__search-title {
@@ -885,6 +885,7 @@ ul.footer__top-social__list {
    height: 5px;
    background-color: $border;
    border-radius: 0;
+   cursor: pointer;
 }
 .irs--flat .irs-handle {
    top: 0px;
@@ -892,6 +893,7 @@ ul.footer__top-social__list {
    height: 30px;
    background-color: #fff;
    box-shadow: 0px 0px 13px 0px rgba(90, 90, 90, 0.2);
+   cursor: pointer;
 }
 .irs--flat .irs-handle > i:first-child {
    display: none;
@@ -900,6 +902,7 @@ ul.footer__top-social__list {
    top: 13px;
    height: 5px;
    background-color: $red;
+   cursor: pointer;
 }
 .irs-from,
 .irs-to,
@@ -910,6 +913,144 @@ ul.footer__top-social__list {
 .irs--flat .irs-min,
 .irs--flat .irs-max {
    display: none;
+}
+
+.filter__color-label {
+   padding-bottom: 20px;
+   border-bottom: 1px solid $border;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+}
+.filter__color-label + .filter__color-label {
+   padding-top: 20px;
+}
+.filter__color-label:last-child {
+   border-bottom: none;
+   padding-bottom: 0;
+}
+.filter__color-input {
+   @extend %checkbox-hidden;
+   &:checked + .filter__color-checkbox {
+      background-image: url("../images/icons/check-on.svg");
+   }
+}
+
+.filter__color-checkbox {
+   width: 16px;
+   height: 16px;
+   position: absolute;
+   margin-left: -16px;
+   margin-top: 7px;
+}
+.filter__color-checkbox--blue {
+   background-color: #00aeef;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.filter__color-checkbox--red {
+   background-color: #f52574;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.filter__color-checkbox--green {
+   background-color: #24d4ac;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.filter__color-checkbox--orange {
+   background-color: #ff7e00;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.filter__color-checkbox--black {
+   background-color: #000;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.filter__color-checkbox--purple {
+   background-color: #923899;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.filter__title {
+   font-size: 22px;
+   text-align: left;
+}
+.filter__size-label {
+   display: block;
+   padding-left: 35px;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+.filter__size-input {
+   @extend %checkbox-hidden;
+   &:checked + .filter__size-checkbox {
+      background-image: url("../images/icons/check-on-red.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      & + .filter__size-text {
+         color: $red;
+      }
+   }
+}
+.filter__size-checkbox {
+   width: 20px;
+   height: 20px;
+   border: 1px solid $text2;
+   border-color: $red;
+   position: absolute;
+   border-radius: 50%;
+   margin-left: -35px;
+   margin-top: 3px;
+}
+
+.filter__category-title {
+   font-size: 22px;
+   text-align: left;
+}
+.filter__category-label {
+   margin-bottom: 15px;
+   cursor: pointer;
+   display: block;
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+.filter__category-input {
+   @extend %checkbox-hidden;
+   &:checked + .filter__category-checkbox {
+      background-color: $red;
+      color: #fff;
+   }
+}
+.filter__category-checkbox {
+   background-color: $bg;
+   color: $title;
+   display: flex;
+   justify-content: space-between;
+   padding: 16px 20px;
+}
+
+.filter__popular-label {
+   display: inline-block;
+   margin-bottom: 20px;
+   margin-right: 3px;
+   cursor: pointer;
+   padding: 10px 0px;
+}
+.filter__popular-input {
+   @extend %checkbox-hidden;
+   &:checked + .filter__popular-checkbox {
+      background-color: $red;
+      border-color: $red;
+      color: #fff;
+   }
+}
+.filter__popular-checkbox {
+   border: 1px solid $border;
+   padding: 10px 20px;
 }
 .shop__content {
 }
