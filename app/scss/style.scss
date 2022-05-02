@@ -527,7 +527,7 @@ ul.slick-dots {
       order: -1;
       margin-left: -12px;
    }
-   .star{
+   .star {
       margin-left: 23px;
    }
    .products__item-content__box {
@@ -542,13 +542,13 @@ ul.slick-dots {
       background-color: $title;
       box-shadow: none;
       text-transform: none;
-      &:hover{
+      &:hover {
          background-color: $red;
          box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
       }
    }
 }
-.products__item-content__box{
+.products__item-content__box {
    display: none;
 }
 .products__item-img__box {
@@ -1195,6 +1195,105 @@ ul.footer__top-social__list {
    .products__item {
       margin-bottom: 40px;
    }
+}
+
+.products__page {
+   padding: 120px 0 60px;
+   border-bottom: 1px solid $border;
+}
+.products__one {
+}
+.products__one-inner {
+   display: flex;
+}
+.products__one-slide {
+   width: 730px;
+   margin-right: 70px;
+}
+.products__slide {
+}
+.products__slide-thumb {
+   width: 140px;
+   margin-right: 30px;
+}
+.products__slide-thumb__item {
+   margin-bottom: 30px;
+   width: 140px;
+   height: 140px;
+   img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+   }
+}
+.products__slide-big {
+   width: 560px;
+   img {
+      width: 560px;
+      height: 650px;
+      object-fit: cover;
+   }
+}
+.products__slide-big__item {
+}
+.products__one-content {
+   width: 370px;
+}
+.products__one-title {
+}
+.products__one-box {
+}
+.products__one-price {
+}
+.products__one-price__new {
+}
+.products__one-price__old {
+}
+.products__one-star {
+}
+.star {
+}
+.products__one-text {
+}
+.products__one-form {
+}
+.products__filter {
+}
+.products__filter-color {
+}
+.products__filter-color__title {
+}
+.products__filter-color__input {
+}
+.products__filter-color__checkbox {
+}
+.products__filter-size {
+}
+.products__filter-size__title {
+}
+.products__filter-size__input {
+}
+.products__filter-size__checkbox {
+}
+.products__filter-info {
+}
+.products__info {
+}
+.products__info-list {
+}
+.products__info-item {
+}
+.products__info-title {
+}
+.products__info-text {
+}
+.products__filter-num {
+}
+.products__filter-btn {
+}
+.products__tabs {
+}
+.products__reviews {
 }
 
 @import "media.scss";
