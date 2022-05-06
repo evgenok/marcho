@@ -11,7 +11,10 @@ $(function () {
    $('.products__slide-big').slick({
       asNavFor: '.products__slide-thumb',
       draggable: false,
+      arrows: false,
+      fade: true
    });
+    
    // GRID-LINE
 
    $('.shop__content-filter__btn').on('click', function () {
@@ -29,7 +32,7 @@ $(function () {
 
    // SELECTMENU
 
-   $('.select-style').styler();
+   $('.select-style, .products__filter-num').styler();
 
    // RANGESLIDER
 
