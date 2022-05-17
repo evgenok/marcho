@@ -1,5 +1,18 @@
 $(function () {
 
+   // TABS 
+
+   $('.products__tabs-top__item').on('click', function (e) {
+      e.preventDefault();
+      $('.products__tabs-top__item').removeClass('products__tabs-top__item--active');
+      $(this).addClass('products__tabs-top__item--active');
+
+      $('.products__tabs-content__item').removeClass('products__tabs-content__item--active');
+      $($(this).attr('href')).addClass('products__tabs-content__item--active');
+   });
+
+   // SLIDER
+
    $('.products__slide-thumb').slick({
       asNavFor: '.products__slide-big',
       focusOnSelect: true,
@@ -14,7 +27,7 @@ $(function () {
       arrows: false,
       fade: true
    });
-    
+
    // GRID-LINE
 
    $('.shop__content-filter__btn').on('click', function () {
