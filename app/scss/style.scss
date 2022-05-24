@@ -1529,7 +1529,7 @@ ul.footer__top-social__list {
    }
 }
 
-.comments__form{
+.comments__form {
    border-bottom: 1px solid $border;
    padding-bottom: 60px;
 }
@@ -1619,6 +1619,100 @@ ul.footer__top-social__list {
       font-size: 18px;
       line-height: 1;
       padding: 15px 0 5px;
+   }
+}
+
+.blog__page {
+   padding: 120px 0 60px;
+}
+.blog__page-inner {
+   display: flex;
+   justify-content: space-between;
+}
+.blog__page-content {
+   width: 770px;
+   margin-right: 30px;
+}
+.blog__page-item {
+   margin-bottom: 60px;
+   .blog__box {
+      justify-content: start;
+   }
+}
+.blog__page-link {
+   display: block;
+}
+.blog__page-img {
+   max-width: 770px;
+   height: 450px;
+   object-fit: cover;
+   display: block;
+}
+.blog__page-item__box {
+   padding: 40px;
+   border: 1px solid $border;
+   border-top: none;
+}
+.blog__page-item__title a {
+   color: $title;
+   font-size: 22px;
+   font-weight: 500;
+   margin-bottom: 20px;
+   &:hover {
+      color: $red;
+   }
+}
+.blog__box-author {
+   color: $text2;
+   margin-right: 20px;
+}
+.blog__page-aside {
+   width: 370px;
+}
+.blog__page-item.blog__page-item--no-img {
+   border-top: 1px solid $border;
+   box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
+}
+.blog__page-item--slider {
+   .slick-prev,
+   .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3);
+      path {
+         fill: #fff;
+      }
+      &:hover {
+         background-color: #fff;
+         path {
+            fill: $red;
+         }
+      }
+   }
+   .slick-prev {
+      left: 40px;
+   }
+   .slick-next {
+      right: 40px;
+   }
+   .slick-disabled {
+      background-color: #fff;
+      box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
+      path {
+         fill: $red;
+      }
    }
 }
 
