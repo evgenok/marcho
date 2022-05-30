@@ -1746,16 +1746,14 @@ ul.footer__top-social__list {
    margin-bottom: 20px;
    text-align: justify;
 }
-.person__social {
-}
-.person__social-link{
-   path{
+.person__social-link {
+   path {
       fill: $text2;
    }
-   &:hover{
+   &:hover {
       path {
-      fill: $red;
-   }
+         fill: $red;
+      }
    }
 }
 .person__social-link + .person__social-link {
@@ -1767,7 +1765,7 @@ ul.footer__top-social__list {
    border: 1px solid $border;
    margin-bottom: 40px;
 }
-.latestpost__title{
+.latestpost__title {
    color: $title;
    text-transform: uppercase;
    font-size: 22px;
@@ -1776,7 +1774,7 @@ ul.footer__top-social__list {
 .latestpost__item {
    display: flex;
    margin-bottom: 20px;
-   & + .latestpost__item{
+   & + .latestpost__item {
       border-top: 1px solid $border;
       padding-top: 20px;
    }
@@ -1807,15 +1805,162 @@ ul.footer__top-social__list {
    color: $text2;
    padding-left: 30px;
    position: relative;
-   &::before{
+   &::before {
       position: absolute;
       content: "";
       left: 0;
       top: 4px;
-      background: url('../images/icons/time.svg') center no-repeat;
+      background: url("../images/icons/time.svg") center no-repeat;
       width: 20px;
       height: 20px;
    }
+}
+
+.blogone {
+   .comments__form {
+      border-bottom: none;
+   }
+   .comments__img {
+      width: 165px;
+   }
+}
+.blogone__content {
+   text-align: justify;
+   &-text {
+      h4 {
+         color: $title;
+         font-size: 22px;
+         font-weight: 500;
+         margin: 25px 0;
+      }
+      p {
+         margin: 25px 0;
+      }
+      blockquote {
+         background-color: $bg;
+         border-left: 3px solid $red;
+         padding: 35px;
+         color: $title;
+         font-size: 22px;
+         margin: 25px 0;
+      }
+   }
+}
+.blogone__content-text {
+   border: 1px solid $border;
+   border-top: none;
+   padding: 30px;
+   margin-top: -1px;
+}
+.blogone__info {
+   display: flex;
+   justify-content: start;
+}
+.blogone__info-link {
+   margin-right: 30px;
+   padding-left: 30px;
+   position: relative;
+   color: $text2;
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 26px;
+      background-size: cover;
+   }
+}
+.blogone__info-link--data {
+   &::before {
+      background: url("../images/icons/time.svg") center no-repeat;
+      top: -4px;
+   }
+}
+.blogone__info-link--comment {
+   &::before {
+      background: url("../images/icons/comment.svg") center no-repeat;
+   }
+}
+.blogone__info-link--author {
+   &::before {
+      background: url("../images/icons/author.svg") center no-repeat;
+   }
+}
+.blogone__content-limg {
+   float: left;
+   margin-right: 30px;
+   margin-bottom: 10px;
+}
+.blogone__content-rimg {
+   float: right;
+   margin-right: 30px;
+   margin-bottom: 10px;
+}
+.blogone__box {
+   padding: 25px 30px;
+   display: flex;
+   justify-content: space-between;
+}
+.blogone__tags,
+.blogone__share {
+   span {
+      color: $title;
+      text-transform: uppercase;
+   }
+}
+.blogone__tags a {
+   color: $text2;
+   &:hover {
+      text-decoration: underline;
+   }
+}
+.blogone__share {
+   a {
+      margin-right: 10px;
+      vertical-align: middle;
+      line-height: 1;
+      path {
+         fill: $text2;
+      }
+      &:hover {
+         path {
+            fill: $red;
+         }
+      }
+   }
+}
+.blogone__author {
+   display: flex;
+   border-bottom: 1px solid $border;
+   margin-bottom: 40px;
+   padding-bottom: 40px;
+}
+.blogone__author-img {
+   width: 140px;
+   height: 140px;
+   object-fit: cover;
+   margin-right: 30px;
+}
+.blogone__author-title {
+   color: $title;
+   font-size: 22px;
+   font-weight: 500;
+   margin-bottom: 30px;
+}
+.comment__title {
+   color: $title;
+   font-size: 24px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 25px;
+}
+.blogone__form-title {
+   color: $title;
+   font-size: 24px;
+   margin: 35px 0 25px;
+   text-transform: uppercase;
+   font-weight: 700;
 }
 
 @import "media.scss";
