@@ -11,6 +11,7 @@ $border: #ececec;
    background-color: $red;
    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
    cursor: pointer;
+   border: none;
 }
 %checkbox-hidden {
    width: 1px;
