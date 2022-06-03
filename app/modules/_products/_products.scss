@@ -1,0 +1,200 @@
+.products {
+   padding: 105px 0 120px;
+   .products__item {
+      min-width: 370px;
+      text-align: center;
+      &:hover {
+         .products__item-link__box {
+            transform: translateY(0%);
+         }
+      }
+   }
+}
+.products__items {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 45px 30px;
+}
+
+.products__item.products__item--list {
+   width: 100%;
+   display: flex;
+   text-align: left;
+   &:hover {
+      .products__item-link__box {
+         transform: translateY(-280%);
+      }
+   }
+   .products__item-img__box {
+      height: 250px;
+      min-width: 200px;
+      margin-bottom: 0;
+      img {
+         height: 250px;
+      }
+   }
+   .products__item-link__box {
+      width: 115px;
+      background-color: transparent;
+      box-shadow: none;
+      bottom: auto;
+      .products__item-link {
+         width: 50px;
+         height: 50px;
+         background-color: #fff;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .products__item-link__line {
+         display: none;
+      }
+   }
+   .products__item-wrapper__box {
+      padding: 30px 40px;
+      border: 1px solid #ececec;
+      border-left: none;
+   }
+   .products__item-box {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .products__item__title {
+      text-align: left;
+      order: -1;
+      width: 100%;
+      padding: 0px;
+      margin-bottom: 10px;
+      line-height: 1;
+   }
+   .products__item__price {
+      order: -1;
+      margin-left: -12px;
+   }
+   .star {
+      margin-left: 23px;
+   }
+   .products__item-content__box {
+      display: block;
+   }
+   .products__item-text {
+      margin-bottom: 25px;
+   }
+   .products__item-btn {
+      @extend %btn;
+      border: none;
+      background-color: $title;
+      box-shadow: none;
+      text-transform: none;
+      &:hover {
+         background-color: $red;
+         box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+      }
+   }
+}
+.products__item-content__box {
+   display: none;
+}
+.products__item-img__box {
+   position: relative;
+   height: 370px;
+   overflow: hidden;
+   margin-bottom: 25px;
+}
+.products__item-img {
+   object-fit: cover;
+}
+.products__item-link__box {
+   position: absolute;
+   bottom: 50px;
+   left: 0;
+   right: 0;
+   background-color: #fff;
+   width: 210px;
+   height: 50px;
+   margin: 0 auto;
+   border-radius: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   transform: translateY(300%);
+   transition: all 0.3s linear;
+}
+.products__item-link__line::before,
+.products__item-link__line::after {
+   position: absolute;
+   content: "";
+   height: 30px;
+   width: 1px;
+   background-color: #ececec;
+   top: 10px;
+}
+.products__item-link__line::before {
+   left: 70px;
+}
+.products__item-link__line::after {
+   right: 70px;
+}
+.products__item-link {
+   display: inherit;
+   path {
+      transition: all 0.3s linear;
+   }
+}
+.products__item-link:hover {
+   path {
+      fill: $red;
+   }
+}
+.star {
+   margin: 0 auto;
+}
+.products__item__title {
+   font-size: 22px;
+   font-weight: 400;
+   text-transform: none;
+   padding: 15px 0 20px;
+}
+.products__item__price {
+   display: flex;
+   justify-content: center;
+}
+.products__item-old__price {
+   color: $text2;
+   padding: 0 12px;
+   text-decoration: line-through;
+}
+.products__item-new__price {
+   font-size: 16px;
+   font-weight: 400;
+   padding: 0 12px;
+   color: $title;
+   font-weight: 500;
+}
+.products__item-sale {
+   .products__item-img__box::before {
+      content: "SALE";
+      @extend %btn;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      padding: 9px 16px;
+      line-height: 1;
+   }
+}
+.products__link-block {
+   text-align: center;
+}
+.products__link {
+   @extend %btn;
+   background-color: #fff;
+   border: 1px solid $red;
+   color: $red;
+   box-shadow: none;
+   transition: all 0.3s linear;
+   margin-top: 50px;
+}
+.products__link:hover {
+   @extend %btn;
+}

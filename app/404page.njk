@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="css/404-page.min.css">
+   </head>
+
+   <body>
+
+      {% include 'app/modules/_header/_header.html' %}
+
+      <main class="main">
+         <section class="page404">
+            <div class="container">
+               <div class="page404__inner">
+                  <div class="page404__content">
+                     <div class="page404__title title">OPPS! Page Not Found!!</div>
+                     <p class="page404__text text">We,re sorry but we can’t seem to find the pages you request. This might be because you have typed the web address not
+                  find incorrectly.</p>
+                     <a href="#" class="page404__link">BACK TO HOME</a>
+                  </div>
+                  <img src="images/404page.png" alt="" class="page404__img">
+               </div>
+            </div>
+         </section>
+      </main>
+
+      {% include 'app/modules/_footer/_footer.html' %}
+
+      <script src="js/main.min.js"></script>
+   </body>
+
+</html>

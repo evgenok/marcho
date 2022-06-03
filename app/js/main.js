@@ -19,7 +19,7 @@ $(function () {
       slidesToShow: 4,
       slidesToScroll: 1,
       vertical: true,
-      draggable: false,
+      draggable: false ,
    });
    $('.products__slide-big').slick({
       asNavFor: '.products__slide-thumb',
